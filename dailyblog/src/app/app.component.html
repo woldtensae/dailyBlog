@@ -11,24 +11,47 @@
           </span>
     </div>
   </div>
-  <div class="responsiveIcon" (click)="myFunction($event)">
+  <div class="responsiveIcon" (click)="myFunction()">
       <div class="icons"></div>
       <div class="icons"></div>
       <div class="icons"></div>
   </div>
   <div [ngClass] = "slideMenuClassName">
-      <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">links</a>  </li>
-          <li><a href="#">products</a></li>
-      </ul>     
+      <table class="table table-hover">
+        <tr>
+          <td><a href="#">Business cards</a></td>
+        </tr>
+        <tr>  
+          <td><a href="#">Weddings</a></td>
+        </tr>
+        <tr>  
+          <td><a href="#">General purpose</a></td>
+        </tr>
+        <tr>  
+          <td><a href="#">Banners</a>  </td>
+        </tr>
+        <tr>  
+          <td><a href="#">Contact info</a></td>  
+        </tr>
+      </table>     
   </div>
 </div>
+
 <div class="bg">
    
-    
-    <h1>What works and good programming practices </h1>
+            <a href="#"><div [ngClass]="selected" (mouseout)="disselected()" (mouseenter)="selectedFunc()" >Java</div></a>
+            <a href="#"><div [ngClass]="selected1" (mouseout)="disselected1()" (mouseenter)="selectedFunc1()" >Angular</div></a>
+            <a href="#"><div [ngClass]="selected2" (mouseout)="disselected2()" (mouseenter)="selectedFunc2()" >Node</div></a>
+            <a href="#"><div [ngClass]="selected3" (mouseout)="disselected3()" (mouseenter)="selectedFunc3()" >HTML</div></a>
+            <a href="#"><div [ngClass]="selected3" (mouseout)="disselected3()" (mouseenter)="selectedFunc3()" >JanaScript</div></a>
 </div>
 
+<div class="mainContainer">
+    <div class="mainContainerleft">
+        
+    </div>
+    <div class="mainContainerRight">
+       
+        
+    </div>
+</div>

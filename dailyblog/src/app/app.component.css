@@ -9,11 +9,11 @@
 }
 
 .bg{
-    background-image: url("wall-paper.jpg");
+    width: 100%;
     margin-top:100px;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 200px;
+    border-style: solid;
+    border-width: 1px;
+ 
 }
 
 .header-left{
@@ -59,6 +59,56 @@
         background-color: rgb(213, 218, 206);
         margin: 6px 0;
     }
+    .search{
+        width: 100%;    
+    }
+}
+@media screen and (min-width: 690px){
+    .slideMenuClassNameDown{
+        display: none;
+    }
+}
+
+.search{
+    font-family: "Cooper Black";
+    font-size: 1.3em;
+    width:60%;
+    float: left;
+    color: rgb(22, 133, 65);
+    margin-top: 0;
+    border-style: solid;
+    border-width:1px;
+}
+.divLink{
+    float: left;
+    width:40%;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(22, 133, 65); 
+    border-bottom-width: 1px; 
+}
+.on{
+    width: 200px;
+    background-color: gray;
+    font-family: "Cooper Black";
+    font-size: 1.3em;
+    text-align: center;
+    color: rgb(241, 241, 248);
+    float: left;
+    margin-top: 0;
+    border-style: solid;
+    border-width:1px;  
+}
+.off{
+    width: 200px;
+    background-color: lightgray;
+    font-family: "Cooper Black";
+    font-size: 1.3em;
+    text-align: center;
+    color: rgb(22, 133, 65);
+    float:left;
+    margin-top: 0;
+    border-style: solid;
+    border-width:1px;
 }
 .slideMenuClassNameDown{
     margin-top: 100px;
@@ -68,3 +118,36 @@
 .slideMenuClassNameUp{
     display: none;
 }
+input[type=text] {
+    background-color: lightgray;
+    float: right;
+}
+.mainContainer{
+    width:100%;
+    margin-left:auto;
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+    margin-top: 25px;
+}
+.mainContainerleft{
+    width: 45%;
+    border-style: solid;
+    border-color: rgb(22, 133, 65);
+    border-width: 1px;
+    float: left;
+    margin: 20px;
+    padding:20px;
+
+}
+.mainContainerRight{
+    width:45%;
+    border-style: solid;
+    border-color:rgb(22, 133, 65);
+    border-width: 1px; 
+    float:right;
+    margin: 20px 10px 20px 20px;
+    padding:20px;
+}
+
+ 
