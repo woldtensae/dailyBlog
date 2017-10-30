@@ -39,8 +39,8 @@
 
 <div class="bg">
    
-            <a href="#"><div [ngClass]="selected" (mouseout)="disselected()" (mouseenter)="selectedFunc()" >Java</div></a>
-            <a href="#"><div [ngClass]="selected1" (mouseout)="disselected1()" (mouseenter)="selectedFunc1()" >Angular</div></a>
+            <a [routerLink] = "['']"><div [ngClass]="selected" (mouseout)="disselected()" (mouseenter)="selectedFunc()" >Java</div></a>
+            <a [routerLink] = "['angular']"><div [ngClass]="selected1" (mouseout)="disselected1()" (mouseenter)="selectedFunc1()" >Angular</div></a>
             <a href="#"><div [ngClass]="selected2" (mouseout)="disselected2()" (mouseenter)="selectedFunc2()" >Node</div></a>
             <a href="#"><div [ngClass]="selected3" (mouseout)="disselected3()" (mouseenter)="selectedFunc3()" >HTML</div></a>
             <a href="#"><div [ngClass]="selected3" (mouseout)="disselected3()" (mouseenter)="selectedFunc3()" >JanaScript</div></a>
@@ -48,7 +48,7 @@
 
 <div class="mainContainer">
     <div class="mainContainerleft">
-        
+        <router-outlet></router-outlet>
     </div>
     <div class="mainContainerRight">
        
